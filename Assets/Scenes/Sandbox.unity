@@ -4143,7 +4143,7 @@ GameObject:
   - component: {fileID: 2136016356}
   - component: {fileID: 2136016355}
   m_Layer: 0
-  m_Name: You Dead Text
+  m_Name: You Died Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4188,7 +4188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU DEAD
+  m_text: YOU DIED
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b8a3acb4782b604bb65590ce78aa64f, type: 2}
   m_sharedMaterial: {fileID: 1388407881393478334, guid: 0b8a3acb4782b604bb65590ce78aa64f, type: 2}
@@ -4334,42 +4334,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1417382348379899176, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: ammoSlot
-      value: 
-      objectReference: {fileID: 8997996946905382215}
-    - target: {fileID: 2502812535918052006, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: ammoSlot
-      value: 
-      objectReference: {fileID: 8997996946905382215}
-    - target: {fileID: 2511483793651141476, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.20000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511483793651141476, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511483793651141476, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0000005811453
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511483793651141476, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511483793651141476, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511483793651141476, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511483793651141476, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
     - target: {fileID: 3445009870607116407, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
       propertyPath: gameOverCanvas
       value: 
@@ -4414,6 +4378,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5637970614299726403, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
+      propertyPath: ammoSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637970614299726403, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637970614299726403, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637970614299726403, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
+      propertyPath: ammoSlots.Array.data[0].ammoAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637970614299726403, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637970614299726403, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6746642083788826691, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4428,17 +4416,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5429090280319135930, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
   m_PrefabInstance: {fileID: 5794067114953532218}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8997996946905382215 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5637970614299726403, guid: e4cf91ca9a04e69468687500a05f63a0, type: 3}
-  m_PrefabInstance: {fileID: 5794067114953532218}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f49369b3093d4dc45a7385c2c697d4eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
