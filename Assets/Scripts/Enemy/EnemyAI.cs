@@ -8,18 +8,28 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float rotationSpeed = 5f;
+    [SerializeField] int damage = 30;
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+    EnemyHealth health;
+    
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
+        
     }
 
     void Update()
     {
+        if(health.IsDead())
+        {
+            enabled = false; //turns off enemy component, vo ovoj slucaj gasime EnemyAI skripta
+            navMeshAgent.enabled = false;
+        }
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (isProvoked)
         {
@@ -62,6 +72,7 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("attack", true);
         /*Debug.Log(name + " is eating the brain of " + target.name);*/
+        
     }
 
     private void FaceTarget()
