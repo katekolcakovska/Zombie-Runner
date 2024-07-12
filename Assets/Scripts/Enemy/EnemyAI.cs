@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float rotationSpeed = 5f;
     [SerializeField] int damage = 30;
@@ -13,14 +13,15 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+
     EnemyHealth health;
-    
+    Transform target;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
-        
+        target = FindObjectOfType<PlayerHealth>().transform; //deka samo player-ot ima player health scripta mozeme da go najdeme preku nea
     }
 
     void Update()
