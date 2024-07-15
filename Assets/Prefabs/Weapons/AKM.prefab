@@ -499,11 +499,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstPersonCamera: {fileID: 0}
   range: 35
-  damage: 30
+  damage: 50
   muzzleFlash: {fileID: 5385307375287824455}
   hitEffect: {fileID: 5062204444150515551, guid: 18ae747c66aa6df478105fc9fe96b9a2, type: 3}
   ammoSlot: {fileID: 0}
-  timeBetweenShots: 1
+  ammoType: 0
+  timeBetweenShots: 0.5
+  ammoText: {fileID: 0}
 --- !u!114 &2044685561908029373
 MonoBehaviour:
   m_ObjectHideFlags: 0
